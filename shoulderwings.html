@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pose Detection</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="shoulderwings.css"/>
+</head>
+<body>
+  <div id="container">
+    <h1>Key Point Detection</h1>
+    <div id="trackingStatus">Not tracking</div>
+    <div id="exerciseStatus"></div>
+
+    <div class="back-button" onclick="location.href='home.html'">← Back to Exercises</div>
+
+    <!-- Left Side Controls -->
+    <div id="main-flex-container">
+      <div id="controls">
+        <div id="title">Shoulder Wings</div>
+        <input type="number" id="targetReps" placeholder="Target reps"/>
+        <button id="startButton">Start Tracking</button>
+        <button id="demoButton" class="secondary-button">Watch Demonstration</button>
+        <p id="repCount">Reps: 0 / 0</p>
+      </div>
+      <!-- Video & Canvas -->
+      <div id="videoContainer">
+        <video id="video" width="640" height="480" autoplay playsinline style="display: none;"></video>
+        <canvas id="canvas" width="640" height="480"></canvas>
+      </div>
+    </div>
+    <div id="demoVideoContainer" class="demo-hidden">
+      <div class="demo-video-wrapper">
+        <button id="closeDemoButton" class="close-button">×</button>
+        <video id="demoVideo" width="400" autoplay muted loop playsinline>
+          <source src="/demoVideos/shoulderWings.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+
+  <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+  <script src="scriptV1.js"></script>
+</body>
+</html>

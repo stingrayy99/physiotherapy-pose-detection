@@ -1,0 +1,99 @@
+/* Home Page Styles */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .subtitle {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-top: -15px;
+  }
+  
+  #exercise-selection {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  #exercise-selection h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+  }
+  
+  .exercise-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px;
+  }
+  
+  .exercise-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .exercise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .exercise-card h3 {
+    color: var(--primary-color);
+    margin: 15px 0 10px;
+  }
+  
+  .exercise-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .coming-soon {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .coming-soon:hover {
+    transform: none;
+    box-shadow: var(--box-shadow);
+  }
+
+
+  /* General Styles */
+:root {
+    --primary-color: #4a6fa5;
+    --secondary-color: #6b8cae;
+    --accent-color: #ff7e5f;
+    --background-color: #f5f7fa;
+    --text-color: #333;
+    --light-text: #f5f7fa;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  #container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
